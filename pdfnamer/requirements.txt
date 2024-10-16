@@ -1,0 +1,6 @@
+watchdog==2.3.0
+PyPDF2==3.0.0
+pdf2image==1.16.3
+Pillow==9.2.0
+openai==0.27.2
+pytesseract==0.3.13

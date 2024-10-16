@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Python Dev Container",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../Dockerfile"
+	},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python", // Python extension for VS Code
+                "ms-python.vscode-pylance", // Pylance for Python
+                "ms-toolsai.jupyter" // Jupyter for interactive notebooks (optional)
+            ],
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python" // Path to Python inside the container
+            }
+        }
+    }
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
